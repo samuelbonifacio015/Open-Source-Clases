@@ -42,6 +42,11 @@ public record Money(BigDecimal amount, Currency currency) {
      */
     public Money multiply(BigDecimal multiplier){
         return new Money(amount.multiply(multiplier), currency);
+
+    }
+
+    public static Money zero(){
+        return new Money(BigDecimal.ZERO, Currency.getInstance("USD"));
     }
 
 }
