@@ -1,2 +1,7 @@
+<!--Registration form component with event bindings and validation -->
+<app-developer-registration
+  (developerRegistered)="updateRegisteredDeveloperInfo($event)"
+  (registrationDeferred)="resetRegisteredDeveloperInfo()" />
+
 <app-developer-greeting [firstName]="firstName" [lastName]="lastName"/>
 

@@ -23,7 +23,7 @@ export class DeveloperGreeting {
    * @returns The full name of the developer or 'Anonymous Developer'.
    */
   fullName = computed(() => {
-    if (!this.firstName && !this.lastName) {
+    if (!this.firstName() && !this.lastName()) {
       return 'Anonymous Developer';
     }
     const developer = new Developer(this.firstName(), this.lastName());

@@ -1,1 +1,29 @@
-<p>developer-registration works!</p>
+<h1>New developer</h1>
+
+<!-- Developer Registration Form -->
+
+<form (ngSubmit)="submitRegistrationRequest()">
+  <!-- First Name Input Field -->
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" [value]="firstName()" (input)="firstName.set($any($event.target).value)">
+  <!-- validation Message -->
+  @if (firstName().trim().length>0 && firstName().trim().length<2) {
+    <div class="error">First Name must be at least 3 characters long.</div>
+  }
+
+  <!-- First Name Input Field -->
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" [value]="lastName()" (input)="lastName.set($any($event.target).value)">
+  <!-- validation Message -->
+  @if (lastName().trim().length>0 && lastName().trim().length<2) {
+    <div class="error">LastName Name must be at least 3 characters long.</div>
+  }
+
+  <!-- Button group for form actions" -->
+
+  <div class="button-group">
+    <button type="submit" [disabled]="!isFormValid()">Register</button>
+    <button type="button" (click)="deferRegistration()">Later</button>
+    <button type="button" (click)="clearFields()">Clear</button>
+  </div>
+</form>
