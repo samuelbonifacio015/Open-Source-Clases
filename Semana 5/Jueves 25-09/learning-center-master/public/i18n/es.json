@@ -13,7 +13,7 @@
   },
   "page-not-found" : {
     "title": "Página no encontrada",
-    "content": "La ruta <strong>{{ invalidPath }}</strong> es inválida.",
+    "content": "La ruta <strong>{{ invalid_path }}</strong> es inválida.",
     "go-home": "Ir a Inicio"
   },
   "footer": {

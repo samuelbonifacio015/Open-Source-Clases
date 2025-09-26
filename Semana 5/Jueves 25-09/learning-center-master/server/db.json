@@ -1,0 +1,44 @@
+{
+  "profile": [
+    {
+      "id": 1,
+      "name": "administrator",
+      "email": "administrator@upc.edu.pe"
+    },
+    {
+      "id": 2,
+      "name": "user",
+      "email": "user@upc.edu.pe"
+    }
+  ],
+  "products": [
+    {
+      "name": "Product 1 Updated",
+      "price": 100,
+      "description": "Description for Product 1 Updated",
+      "id": 1
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Vue Foundation",
+      "description": "Vue Introductory Course"
+    },
+    {
+      "id": 2,
+      "title": "Open Source",
+      "description": "JavaScript Open Source Course"
+    },
+    {
+      "id": 3,
+      "title": "Angular Foundation",
+      "description": "Angular Introductory Course"
+    },
+    {
+      "id": 4,
+      "title": "Application Web",
+      "description": "C# Application Web Course"
+    }
+  ]
+}

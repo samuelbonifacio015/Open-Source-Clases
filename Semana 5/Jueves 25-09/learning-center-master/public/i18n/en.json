@@ -13,7 +13,7 @@
   },
   "page-not-found" : {
     "title": "Page not found",
-    "content": "The path <strong>{{ invalidPath }}</strong> is not valid.",
+    "content": "The path <strong>{{ invalid_path }}</strong> is not valid.",
     "go-home": "Ir a Inicio"
   },
   "footer": {
