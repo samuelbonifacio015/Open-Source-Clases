@@ -4,7 +4,7 @@
 
 ## Repositorio de Github con el proyecto de práctica desplegado:
 
-[repo-github]([(https://github.com/c-char-f1/EduTech-Global)])
+[repo-github](https://github.com/c-char-f1/EduTech-Global)
 
 ---
 
@@ -12,6 +12,6 @@
 
 ## Paso 1:
 
-[documentacion-ng-generate]([(https://angular.dev/cli/generate)])
+[documentacion-ng-generate](https://angular.dev/cli/generate)
 
 **ng g environments**
