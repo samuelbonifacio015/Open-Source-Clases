@@ -1,0 +1,25 @@
+{
+  "option" : {
+    "home": "Home",
+    "about": "About",
+    "course": "Courses"
+  },
+  "about" : {
+    "title":  "About us",
+    "content": "ACME Learning Center is an Education Platform, part of ACME Corporation."
+  },
+  "home" : {
+    "title": "Welcome",
+    "content": "Welcome to ACME Learning Center"
+  },
+  "page-not-found" : {
+    "title": "Page not found",
+    "content": "The path <strong>{{ invalid_path }}</strong> is not valid.",
+    "go-home": "Ir a Inicio"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "powered-by": "Powered by",
+    "and": "and"
+  }
+}
