@@ -1,0 +1,12 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <h1>ACME Learning Center</h1>
+    <div class="mat-spacer"></div>
+    @for (option of options; track option.label) {
+      <a mat-button [routerLink]="option.link" routerLinkActive="active">{{ option.label | translate }}</a>
+    }
+    <app-language-switcher/>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet/>
+<app-footer-content/>
