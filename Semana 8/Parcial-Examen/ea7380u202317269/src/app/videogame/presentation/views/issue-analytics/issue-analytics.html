@@ -1,0 +1,13 @@
+<div class="issue-analytics-container">
+  <h1>Issue Analytics</h1>
+
+  <div class="stats-grid">
+    <app-issue-type-stats
+      *ngFor="let issueType of issueTypes"
+      [issueType]="issueType"
+      [issues]="issues"
+      [servers]="servers">
+    </app-issue-type-stats>
+  </div>
+</div>
+

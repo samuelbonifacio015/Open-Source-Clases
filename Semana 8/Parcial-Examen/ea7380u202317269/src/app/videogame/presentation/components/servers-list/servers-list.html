@@ -1,0 +1,38 @@
+<div class="servers-container">
+  <h2>Lista de Servidores</h2>
+
+  <div class="servers-grid">
+    <div class="server-card" *ngFor="let server of servers">
+      <div class="server-header">
+        <h3>{{ server.name }}</h3>
+        <span class="server-id">ID: {{ server.id }}</span>
+      </div>
+
+      <div class="server-details">
+        <div class="detail-item">
+          <span class="label">Costo por Hora:</span>
+          <span class="value">${{ server.costPerHour }}</span>
+        </div>
+
+        <div class="detail-item">
+          <span class="label">Impacto en Gameplay:</span>
+          <span class="value impact-{{ server.impactInGameplay.toLowerCase() }}">
+            {{ server.impactInGameplay }}
+          </span>
+        </div>
+
+        <div class="detail-item">
+          <span class="label">Acción por Defecto:</span>
+          <span class="value action-{{ server.defaultAction.toLowerCase() }}">
+            {{ server.defaultAction }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!servers || servers.length === 0" class="no-data">
+    <p>No hay servidores disponibles</p>
+  </div>
+</div>
+

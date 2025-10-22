@@ -1,0 +1,74 @@
+{
+  "servers": [
+    {
+      "id": 1,
+      "name": "Server A",
+      "costPerHour": 10,
+      "impactInGameplay": "NONE",
+      "defaultAction": "RESTART"
+    },
+    {
+      "id": 2,
+      "name": "Server B",
+      "costPerHour": 20,
+      "impactInGameplay": "PARTIAL",
+      "defaultAction": "REPLACE"
+    },
+    {
+      "id": 3,
+      "name": "Server C",
+      "costPerHour": 30,
+      "impactInGameplay": "TOTAL",
+      "defaultAction": "RESTART"
+    }
+  ],
+  "issues": [
+    {
+      "id": 1,
+      "serverId": 1,
+      "issueType": "LAG",
+      "registeredAt": "2024-06-01T10:00:00Z",
+      "status": "OPEN"
+    },
+    {
+      "id": 2,
+      "serverId": 2,
+      "issueType": "DATA_ERROR",
+      "registeredAt": "2024-06-02T11:00:00Z",
+      "status": "OPEN"
+    },
+    {
+      "id": 3,
+      "serverId": 3,
+      "issueType": "LAG",
+      "registeredAt": "2024-06-03T12:00:00Z",
+      "status": "CLOSED"
+    }
+  ],
+  "service-orders": [
+    {
+      "id": 1,
+      "serverId": 1,
+      "issueId": 1,
+      "neededAction": "RESTART",
+      "priority": "HIGH",
+      "registeredAt": "2024-06-01T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "serverId": 2,
+      "issueId": 2,
+      "neededAction": "NOTHING",
+      "priority": "NORMAL",
+      "registeredAt": "2024-06-02T11:30:00Z"
+    },
+    {
+      "id": 3,
+      "serverId": 3,
+      "issueId": 3,
+      "neededAction": "RESTART",
+      "priority": "HIGH",
+      "registeredAt": "2024-06-03T12:30:00Z"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "home": {
+    "title": "Welcome to Ubisoft",
+    "sections": {
+      "issueAnalytics": "Issue Analytics",
+      "nextServiceOrder": "Next Service Order"
+    }
+  },
+  "footer": {
+    "author": "Samuel Bonifacio - u202312769"
+  },
+  "page-not-found": {
+    "title": "Page Not Found",
+    "content": "The route '<strong>{{invalid_path}}</strong>' was not found.",
+    "go-home": "Return to Home"
+  }
+}

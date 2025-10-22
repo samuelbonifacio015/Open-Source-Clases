@@ -1,0 +1,43 @@
+<div class="next-service-order-container">
+  <h1>Next Service Order</h1>
+
+  <div class="service-order-card" *ngIf="nextServiceOrder && server; else noServiceOrder">
+    <div class="card-header">
+      <h3>Service Order #{{ nextServiceOrder.id }}</h3>
+      <span class="priority-badge priority-{{ nextServiceOrder.priority.toLowerCase() }}">
+        {{ nextServiceOrder.priority }}
+      </span>
+    </div>
+
+    <div class="card-content">
+      <div class="order-info">
+        <div class="info-item">
+          <label>Server:</label>
+          <span>{{ server.name }}</span>
+        </div>
+
+        <div class="info-item">
+          <label>Needed Action:</label>
+          <span>{{ nextServiceOrder.needAction }}</span>
+        </div>
+
+        <div class="info-item">
+          <label>Issue ID:</label>
+          <span>#{{ nextServiceOrder.issueId }}</span>
+        </div>
+
+        <div class="info-item">
+          <label>Registered At:</label>
+          <span>{{ nextServiceOrder.registeredAt | date:'medium' }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noServiceOrder>
+    <div class="no-service-order">
+      <p>No HIGH priority service orders available</p>
+    </div>
+  </ng-template>
+</div>
+

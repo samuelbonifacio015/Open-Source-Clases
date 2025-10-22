@@ -1,0 +1,56 @@
+<div class="new-issue-container">
+  <h1>New Issue</h1>
+  <h2>Add an Issue Record</h2>
+
+  <form class="new-issue-form" (ngSubmit)="onSubmit()" #issueForm="ngForm">
+    <div class="error-message" *ngIf="errorMessage">
+      {{ errorMessage }}
+    </div>
+
+    <div class="form-field">
+      <label for="server">Server:</label>
+      <select
+        id="server"
+        name="server"
+        [(ngModel)]="selectedServerId"
+        required
+        [disabled]="isSubmitting">
+        <option value="">Select a server...</option>
+        <option *ngFor="let server of servers" [value]="server.id">
+          {{ server.name }}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label for="issueType">Issue Type:</label>
+      <select
+        id="issueType"
+        name="issueType"
+        [(ngModel)]="selectedIssueType"
+        required
+        [disabled]="isSubmitting">
+        <option value="">Select an issue type...</option>
+        <option *ngFor="let issueType of issueTypes" [value]="issueType">
+          {{ issueType }}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-actions">
+      <button
+        type="submit"
+        class="create-btn"
+        [disabled]="!issueForm.form.valid || isSubmitting">
+        {{ isSubmitting ? 'Creating...' : 'Create' }}
+      </button>
+      <button
+        type="button"
+        class="cancel-btn"
+        (click)="onCancel()"
+        [disabled]="isSubmitting">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>

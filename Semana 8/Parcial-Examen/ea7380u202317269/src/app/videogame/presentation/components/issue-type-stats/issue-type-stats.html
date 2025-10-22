@@ -1,0 +1,22 @@
+<div class="issue-type-card">
+  <div class="card-header">
+    <h3>{{ issueType }}</h3>
+  </div>
+
+  <div class="card-content">
+    <div class="stat-item">
+      <label>Cost Per Hour:</label>
+      <span class="stat-value">${{ costPerHour.toFixed(2) }}</span>
+    </div>
+
+    <div class="stat-item">
+      <label>Accumulated Cost:</label>
+      <span class="stat-value">${{ accumulatedCost.toFixed(2) }}</span>
+    </div>
+  </div>
+
+  <div class="card-footer">
+    <span>Reported Issues: {{ reportedIssues }}</span>
+  </div>
+</div>
+
