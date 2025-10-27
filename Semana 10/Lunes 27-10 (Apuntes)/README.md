@@ -6,7 +6,7 @@
 
 # backend notas 
 
-**Actualizacion 24/09 (16:11PM) : creación de parte2**
+**Actualizacion 27/10 (18:48PM)**
 
 
 ### 1) CORRER BASE DE DATOS
@@ -37,7 +37,8 @@ spring.jpa.hibernate.naming.physical-strategy=com.acme.catchup.platform.shared.i
 
 Este archivo contiene el directorio, contraseña y conexión con mysql workbench.
 
-
+***url:***
+http://localhost:8080/swagger-ui/index.html
 
 
 
